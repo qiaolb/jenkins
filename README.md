@@ -1,5 +1,5 @@
 # jenkins
-jenkis+kubectl
+jenkis+nodejs
 
 
-可以通过mount kubectl进行，不需要维护了。
+
