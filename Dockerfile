@@ -12,6 +12,6 @@ USER root
 #   && apt-get install --no-install-recommends yarn \
 #   && rm -f node-v11.10.0-linux-x64.tar.xz
 
-RUN apt-get install yarn
+RUN apt-get update && apt-get install -y yarn
 
 USER jenkins
