@@ -1,11 +1,11 @@
 FROM jenkins/jenkins:lts
 
-ARG NODE_VERSION v11.10.0
-ARG DISTRO linux-x64
-
 USER root
 # RUN curl -L https://storage.googleapis.com/kubernetes-release/release/v1.13.3/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
 #   && chmod +x /usr/local/bin/kubectl
+
+ARG NODE_VERSION=v11.10.0
+ARG DISTRO=linux-x64
 
 RUN curl -LO https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-${DISTRO}.tar.xz \
   && tar xzvf node-${NODE_VERSION}-${DISTRO}.tar.xz -C /usr/local/lib/nodejs \
