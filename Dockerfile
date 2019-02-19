@@ -9,7 +9,7 @@ RUN curl -LO https://nodejs.org/dist/v11.10.0/node-v11.10.0-linux-x64.tar.xz \
   && ln -s /usr/local/lib/node-v11.10.0-linux-x64/bin/node /usr/bin/node \
   && ln -s /usr/local/lib/node-v11.10.0-linux-x64/bin/npm /usr/bin/npm \
   && ln -s /usr/local/lib/node-v11.10.0-linux-x64/bin/npx /usr/bin/npx \
-  && apt-get update && apt-get install --no-install-recommends yarn \
+  && apt-get update && apt-get install --no-install-recommends -y yarn \
   && rm -f node-v11.10.0-linux-x64.tar.xz
 
 # RUN apt-get update && apt-get install -y yarn
